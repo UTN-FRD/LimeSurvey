@@ -29,6 +29,7 @@ class SiteTest extends WebTestCase
 			$this->clickAndWait('link=Logout (demo)');
 
 		// test login process, including validation
+		
 		$this->clickAndWait('link=Login');
 		$this->assertElementPresent('name=LoginForm[username]');
 		$this->type('name=LoginForm[username]','demo');
@@ -38,7 +39,7 @@ class SiteTest extends WebTestCase
 		$this->clickAndWait("//input[@value='Login']");
 		$this->assertTextNotPresent('Password cannot be blank.');
 		$this->assertTextPresent('Logout');
-
+	
 		// test logout process
 		$this->assertTextNotPresent('Login');
 		$this->clickAndWait('link=Logout (demo)');
