@@ -65,7 +65,7 @@ $internalConfig = array(
     'modules'=>array(
             'gii'=>array(
                 'class'=>'system.gii.GiiModule',
-                'password'=>'toto',
+                'password'=>'password',
                     'newFileMode'=>0666,
                     'newDirMode'=>0777,
             ),

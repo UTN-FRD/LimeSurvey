@@ -164,7 +164,7 @@
         else
         {
             define('YII_DEBUG', false);
-            error_reporting(0);
+            error_reporting(-1);
         }
     }
     else
